@@ -1,0 +1,26 @@
+let domeOne = new Zdog.Hemisphere({
+    addTo: illo,
+    diameter: 120,
+    stroke: true,
+    rotate: { x: Zdog.TAU / 4 },
+    translate: { y: -80 },
+    color: 'rgba(255, 100, 0, 0.5)',
+});
+
+let body = new Zdog.Cylinder({
+    addTo: illo,
+    diameter: 120,
+    length: 160,
+    stroke: true,
+    rotate: { x: Zdog.TAU / 4 },
+    color: 'rgba(255, 100, 0, 0.5)',
+})
+
+let domeTwo = new Zdog.Hemisphere({
+    addTo: illo,
+    diameter: 120,
+    stroke: true,
+    rotate: { x: -Zdog.TAU / 4 },
+    translate: { y: 80 },
+    color: 'rgba(255, 100, 0, 0.5)'
+});

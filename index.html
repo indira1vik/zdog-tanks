@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet"/>
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+        <canvas class="zdog-canvas" width="420px" height="420px"></canvas>
+        <div class="flex-div">
+            <h2>Input Data</h2>
+            <table>
+                <tr>
+                    <td>Tank Type</td>
+                    <td>
+                        <select name="tank" id="tt">
+                            <option value="select" disabled selected>Select Tank</option>
+                            <option value="cuboid">Cuboid</option>
+                            <option value="cube">Cube</option>
+                            <option value="cylinder">Cylinder</option>
+                            <option value="sphere">Sphere</option>
+                          </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Liquid Level</td>
+                    <td><input type="number" min="4" max="100" placeholder="0-100" class="ipt" id="ll"/></td>
+                </tr>
+                <tr>
+                    <td>Critical Level</td>
+                    <td><input type="number" min="0" max="100" placeholder="0-100" class="ipt" id="cl"/></td>
+                </tr>
+                <tr>
+                    <td>Reorder Level</td>
+                    <td><input type="number" min="0" max="100" placeholder="0-100" class="ipt" id="rl"/></td>
+                </tr>
+                <tr>
+                    <td>Overflow Level</td>
+                    <td><input type="number" min="0" max="100" placeholder="0-100" class="ipt" id="ol"/></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/zdog@1/dist/zdog.dist.min.js"></script>
+    <script type="module" src="./main.js"></script>
+    <script type="module" src="./cylinder.js"></script>
+    <script type="module" src="./cuboid.js"></script>
+</body>
+</html>
