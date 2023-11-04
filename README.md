@@ -1,3 +1,3 @@
 ## Screenshots
-[![One](Cylinder.jpg)]
-[![Two](Cuboid.jpg)]
+![One](Cylinder.jpg)
+![Two](Cuboid.jpg)
